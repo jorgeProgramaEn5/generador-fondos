@@ -1,0 +1,23 @@
+
+body {
+	background: linear-gradient(to right, #237b9c , #b410a4);
+}
+
+.div-title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.div-title h1{
+	font-size: 50px;
+	line-height: 50px;
+	letter-spacing: 12px;
+	word-spacing: 12px;
+}
+
+#p-codigo {
+	font-size: 25px;
+	margin: 20px;
+}
+
