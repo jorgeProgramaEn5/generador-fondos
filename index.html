@@ -1,121 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Fiesta</title>
+        <title>Degradados</title>
         <meta charset="utf-8">
         <meta name="descripcion" content="aqui pongo una descripcion"/>
         <meta name="kayword" content="palabras claves"/>
         <meta name="author" content="Jorge Estrada Machado"/>
         <meta name="copyright" content="Nomber de la empresa"/>
-        <link rel="stylesheet" type="text/css" href="estilo clase 2.css">
-        <link rel="stylesheet" type="text/css" href="normalize.css">
-        <script src="codigo.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+         
     </head>
 
-    <body> 
-               
-        <div><h1>DIA <span id="numeroDias">1</span></h1></div>        
-        <button id="buton">REGISTRO DE ASISTENCIA</button>
-        <button id="buton2">Muestrame la semana</button>
-        <p id="demo">hola</p>
-        <p>Hello Github</p>
-        <p>Hello Github otra vez</p>
-        <p>Hello Github por tercera vez/p>
-                
-                <script>
-                //     let free = false
-                // function validarCliente(argument) {
-	            // let edad = prompt("Que edad tienes?")
-		        //         if (edad >= 18) {
-			    //             hora = prompt("que hora es?")
-                //             if (hora >= 2 && free == false) {
-                //                 alert("pasa gratis")
-                //                 free = true
-                //             }
-                //             else {
-                //             alert("paga la entrada")
-		        //             }
-                //             }
-                            
-                //         else {
-                //             alert("Sal de aqui chama")
-                //         }
-                // }
+    <body id="tagBody" style=""> 
+        
+        <div class="div-title">
+        
+            <h1>GENERADOR DE DEGRADADOS</h1>
 
-                //document.getElementById("buton").addEventListener("click" ,validarCliente);
-                
-                let dia = 1;
+            <div class="div-button">
+                <input type="color" name="" id="button-right" value="#4726ca">
+                <input type="color" name="" id="button-left" value="#800080">
+                <!-- <button class="button-send">OBTENER</button> -->
+            </div>
+            
+            <p>ACTUAL CODIGO CSS:</p>
+            
+            <div class="codigo-css">
+                <div>
+                    <p id="p-codigo">background: linear-gradient(to right, #4726ca , #800080)</p>
+                </div>
+            </div>
 
-                let dia1 
-                let dia2
-                let dia3
-                let dia4
-                
-                let estudiantes
+        </div>
+        
+        <!-- <div class="div-button">
+            <input type="color" name="button-right">
+            <input type="color" name="button-left">
+        </div> -->
 
-                // let semana = {
-                //     "Dia 1": dia1, 
-                //     "Dia 2": dia2, 
-                //     "Dia 3": dia3, 
-                //     "Dia 4": dia4
-                // }
-                
-                function preguntarAlumnos() { 
-                    estudiantes = [
-                    prompt("Jenifer"),
-                    prompt("Carlos"),
-                    // prompt("Cofla"),
-                    // prompt("Manuela"),
-                    // prompt("Agusto"),
-                    // prompt("Jorge"),
-                    // prompt("Alberto"),
-                    // prompt("Luis"),
-                    // prompt("Carla"),
-                    // prompt("Felipa"),
-                ]
-                }
-
-                function accionBoton() {
-                    preguntarAlumnos()
-                    dia++;
-                    document.getElementById("numeroDias").innerHTML = dia;
-                    
-                    if (dia == 2) {
-                        dia1 = estudiantes
-                        document.getElementById("demo").innerHTML = dia1;
-                    }
-
-                    else if (dia == 3) {
-                        dia2 = estudiantes
-                        document.getElementById("demo").innerHTML = dia2;
-                    }
-
-                    else if (dia == 4) {
-                        dia3 = estudiantes
-                        document.getElementById("demo").innerHTML = dia3;
-                    }
-
-                    else {
-                        dia4 = estudiantes
-                        document.getElementById("demo").innerHTML = dia4;
-                    }
-                }
-
-                function accionBoton2(){
-                    document.getElementById("demo").innerHTML = semana;
-                }
-
-                document.getElementById("buton").addEventListener("click" ,accionBoton);
-                document.getElementById("buton2").addEventListener("click" ,accionBoton2);
-                
-                let semana = {
-                    "Dia 1": dia1, 
-                    "Dia 2": dia2, 
-                    "Dia 3": dia3, 
-                    "Dia 4": dia4
-                }
-
-                </script>
+        <!-- <div class="codigo-css">
+            <p>Codigo CSS</p>
+            <p>Gradiente etc etc</p>
+        </div>
+ -->
+        <script src="codigo.js"></script>
     </body>       
 
     <aside>
